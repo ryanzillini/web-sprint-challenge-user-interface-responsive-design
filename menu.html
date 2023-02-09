@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sprint Challenge - Menu</title>
     <link rel="stylesheet" href="css/menu.css" />
     <link
@@ -24,22 +24,24 @@
           <h1><a href="index.html">BLOOMTECH BAR AND GRILL</a></h1>
 
           <!-- nav -->
-          <nav class="directory">
-            <a href="menu.html">Menu</a>
-            <a href="#reservations">Reservations</a>
-            <a href="#special offers">Special Offers</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <nav class="social">
-            <a href="http://instagram.com" target="_blank"
-              ><i class="fab fa-instagram fa-xl"></i
-            ></a>
-            <a href="http://facebook.com" target="_blank"
-              ><i class="fab fa-facebook-square fa-xl"></i
-            ></a>
-            <a href="http://twitter.com" target="_blank"
-              ><i class="fab fa-twitter-square fa-xl"></i
-            ></a>
+          <nav>
+            <div class="directory">
+              <a href="menu.html">Menu</a>
+              <a href="reservations">Reservations</a>
+              <a href="special offers">Special Offers</a>
+              <a href="contact">Contact</a>
+            </div>
+            <div class="social">
+              <a href="http://instagram.com" target="_blank"
+                ><i class="fab fa-instagram fa-xl"></i
+              ></a>
+              <a href="http://facebook.com" target="_blank"
+                ><i class="fab fa-facebook-square fa-xl"></i
+              ></a>
+              <a href="http://twitter.com" target="_blank"
+                ><i class="fab fa-twitter-square fa-xl"></i
+              ></a>
+            </div>
           </nav>
         </div>
       </header>
@@ -51,118 +53,134 @@
       <article class="menu">
         <h2>Food & Drink</h2>
         <div class="menutop">
-          <div class="flex-item drink">
+          <div class="menu-section drink">
             <h3>Drinks</h3>
-            <div class="price">
+            <div class="menu-item">
               <h4>Soda</h4>
               <h4>$2</h4>
+              <p>Coke products</p>
             </div>
-            <p>Coke products</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Coffee</h4>
               <h4>$2</h4>
+              <p>Cream and sugar available upon request</p>
             </div>
-            <p>Cream and sugar available upon request</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Beer</h4>
               <h4>$5</h4>
+              <p>Delicious and refreshing</p>
             </div>
-            <p>Delicious and refreshing</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Wine</h4>
               <h4>$5</h4>
+              <p>Light and fruity</p>
             </div>
-            <p>Light and fruity</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Cocktail</h4>
               <h4>$10</h4>
+              <p>Ask about our specials</p>
             </div>
-            <p>Ask about our specials</p>
           </div>
-          <div class="flex-item apps">
+          <div class="menu-section apps">
             <h3>Appetizers</h3>
-            <div class="price">
+            <div class="menu-item">
               <h4>Fried Pickles</h4>
               <h4>$6</h4>
+              <p>Golden and crispy with tang! (V)</p>
             </div>
-            <p>Golden and crispy with tang! (V)</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Buffalo Wings</h4>
               <h4>$10</h4>
+              <p>
+                5 wings per order; mild, medium, or hot sauce and served with
+                bleu cheese/ranch and carrot sticks (GF)
+              </p>
             </div>
-            <p>
-              5 wings per order; mild, medium, or hot sauce and served with bleu
-              cheese/ranch and carrot sticks (GF)
-            </p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Poutine</h4>
               <h4>$5</h4>
+              <p>Homemade fries topped with everything but the kitchen sink</p>
             </div>
-            <p>Homemade fries topped with everything but the kitchen sink</p>
           </div>
         </div>
         <div class="menutop">
-          <div class="flex-item soups">
+          <div class="menu-section soups">
             <h3>Soup and Salad</h3>
-            <div class="price">
+            <div class="menu-item">
               <h4>House Salad</h4>
               <h4>$8</h4>
+              <p>
+                Spinach and arugala with all the good veggies; add chicken for
+                $6 (GF, V)
+              </p>
             </div>
-            <p>
-              Spinach and arugala with all the good veggies; add chicken for $6
-              (GF, V)
-            </p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>French Onion Soup</h4>
               <h4>$4</h4>
+              <p>Served with a thick topping of cheese and delicious bread</p>
             </div>
-            <p>Served with a thick topping of cheese and delicious bread</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Cheddar Broccoli Soup</h4>
               <h4>$5</h4>
+              <p>Creamy and filling (GF)</p>
             </div>
-            <p>Creamy and filling (GF)</p>
           </div>
-          <div class="flex-item entrees">
+          <div class="menu-section entrees">
             <h3>Entrees</h3>
-            <div class="price">
+            <div class="menu-item">
               <h4>Ribeye Steak</h4>
               <h4>$32</h4>
+              <p>Served with mashed potatoes and roasted asparagus</p>
             </div>
-            <p>Served with mashed potatoes and roasted asparagus</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Big Boy Burger</h4>
               <h4>$14</h4>
+              <p>
+                Beef or black bean burger on homemade bun served with fries
+                Black Bean Burger: (V)
+              </p>
             </div>
-            <p>
-              Beef or black bean burger on homemade bun served with fries Black
-              Bean Burger: (V)
-            </p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Pork Shortrib</h4>
               <h4>$18</h4>
+              <p>Melt off the bone finger food (GF)</p>
             </div>
-            <p>Melt off the bone finger food (GF)</p>
           </div>
         </div>
         <div class="menutop">
-          <div class="flex-item desserts">
+          <div class="menu-section desserts">
             <h3>Desserts</h3>
-            <div class="price">
+            <div class="menu-item">
               <h4>Flourless Chocolate Cake</h4>
               <h4>$7</h4>
+              <p>Gooey and chocolatey heaven (GF)</p>
             </div>
-            <p>Gooey and chocolatey heaven (GF)</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Cookies and Ice Cream</h4>
               <h4>$6</h4>
+              <p>
+                Choose 2 cookies and 1 scoop of ice cream from an assortment
+              </p>
             </div>
-            <p>Choose 2 cookies and 1 scoop of ice cream from an assortment</p>
-            <div class="price">
+
+            <div class="menu-item">
               <h4>Creme Brulee</h4>
               <h4>$8</h4>
+              <p>
+                Crispy scorched top containing a perfect, smooth custard (GF)
+              </p>
             </div>
-            <p>Crispy scorched top containing a perfect, smooth custard (GF)</p>
           </div>
         </div>
       </article>

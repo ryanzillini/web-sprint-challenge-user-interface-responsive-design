@@ -188,12 +188,12 @@ header {
   background-color: black;
   opacity: 80%;
 }
-nav.directory {
+nav .directory {
   display: flex;
   justify-content: space-evenly;
   margin: 15px;
 }
-nav.social {
+nav .social {
   display: flex;
   justify-content: center;
   align-items: center;

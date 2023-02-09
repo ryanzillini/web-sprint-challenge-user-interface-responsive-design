@@ -180,7 +180,7 @@ a {
 /* header section */
 header {
   width: 100%;
-  height: 75vh;
+  height: 100vh;
   background-image: url("../img/menu-header.jpg");
   background-size: cover;
   background-position: center;
@@ -191,13 +191,13 @@ header {
   background-color: black;
   opacity: 0.8;
 }
-nav.directory {
+nav .directory {
   display: flex;
   justify-content: space-evenly;
   margin: 15px;
   color: white;
 }
-nav.social {
+nav .social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +230,6 @@ h1 a {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.8;
-  /* line-height: 2; */
 }
 .menu h2 {
   display: flex;
@@ -240,30 +239,28 @@ h1 a {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center stretch;
   align-content: space-between;
   padding: 2.5%;
 }
-.price {
+.menu-item {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .desserts {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   text-align: left;
-  /* margin-left: 37.5%; */
 }
-.flex-item {
-  width: 22.5%;
+.menu-section {
+  width: 30%;
 }
 
 /* footer section */
 footer {
   width: 100%;
   height: auto;
-  /* padding-top: 2.5vh; */
   background-color: black;
 }
 footer nav {
@@ -278,7 +275,6 @@ footer nav a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0;
 }
 .copyright {
   display: flex;
