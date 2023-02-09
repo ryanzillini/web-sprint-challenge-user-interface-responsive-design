@@ -364,7 +364,12 @@ button a {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
-
+  h1 a {
+    font-size: 5rem;
+  }
+  nav .directory {
+    flex-direction: column;
+  }
   /* gallery section */
   .gallery {
     height: auto;
@@ -372,6 +377,9 @@ button a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  img {
+    width: 87.5%;
   }
 
   /* about us section */
@@ -415,7 +423,47 @@ button a {
   /* footer section */
   footer {
     height: auto;
-    padding-top: 2.5vh;
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .upper {
+    flex-direction: column;
+  }
+  footer nav {
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+  .signup {
+    width: 100%;
+    padding-bottom: 1vh;
+  }
+  input {
+    width: 90%;
+  }
+  .signup p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1vh;
+    font-size: 1.25rem;
+  }
+  input::placeholder {
+    font-size: 1.25rem;
+  }
+  button {
+    width: 90%;
+    padding: 0;
+  }
+  button a {
+    font-size: 1.25rem;
+  }
+  .copyright p {
+    /* align-self: center; */
+    width: 70%;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .copyright {
+    justify-content: center;
   }
 }

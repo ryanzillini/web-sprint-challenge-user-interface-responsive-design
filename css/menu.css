@@ -247,6 +247,9 @@ h1 a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.menu-item p {
+  width: 100%;
+}
 .desserts {
   display: flex;
   justify-content: flex-start;
@@ -317,22 +320,100 @@ button a {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
-  .header-title {
-    width: 75%;
-    margin: 0 auto;
-    text-align: center;
+  .top h1 a {
     font-size: 4rem;
+    text-align: center;
+  }
+
+  nav .directory {
+    flex-direction: column;
   }
 
   /* menu */
   .menu {
     background-image: none;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+  }
+  .menu h2 {
+    border-bottom: 10px;
+    border-style: solid;
+  }
+  .menu h3 {
+    width: 100%;
+    border: 3px;
+    border-style: solid;
+  }
+  .menu h4 {
+    width: 100%;
+  }
+  .menu-item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 3px white;
+    border-style: solid;
+  }
+  .menu-item p {
+    border-bottom: 3px;
+  }
+  .menu-section {
+    width: 66%;
+  }
+  .menutop {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   /* footer section */
   footer {
     height: auto;
-    padding-top: 2.5vh;
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .upper {
+    flex-direction: column;
+  }
+  footer nav {
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+  .signup {
+    width: 100%;
+    padding-bottom: 1vh;
+  }
+  input {
+    width: 90%;
+  }
+  .signup p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1vh;
+    font-size: 1.25rem;
+  }
+  input::placeholder {
+    font-size: 1.25rem;
+  }
+  button {
+    width: 90%;
+    padding: 0;
+  }
+  button a {
+    font-size: 1.25rem;
+  }
+  .copyright p {
+    /* align-self: center; */
+    width: 70%;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .copyright {
+    justify-content: center;
   }
 }
